@@ -1,0 +1,105 @@
+@charset "UTF-8";
+#quickfinder-dirs {
+	background-color: rgba(98,12,25,0.8);
+	bottom: 30px;
+	left: 0;
+	margin: 0 auto;
+	max-width: 940px;
+	padding: 10px 0;
+	position: absolute;
+	right: 0;
+	width: 940px
+}
+#quickfinder-dirs form {
+	margin-bottom: 10px;
+	position: relative
+}
+#quickfinder-dirs form:before, #quickfinder-dirs form:after {
+	content: '';
+	display: block;
+	height: 1px;
+	position: absolute;
+	left: calc(8.333% + 8px);
+	right: calc(8.333% + 8px)
+}
+#quickfinder-dirs form:before {
+	background-color: #620c19;
+	bottom: 0
+}
+#quickfinder-dirs form:after {
+	background-color: #5c0a14;
+	bottom: -1px
+}
+#quickfinder-dirs .row {
+	margin-left: 5px;
+	margin-right: 5px
+}
+#quickfinder-dirs div[class*="col-"] {
+	padding-left: 5px;
+	padding-right: 5px
+}
+#quickfinder-dirs h2 {
+	color: #ded595;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+	font-weight: normal;
+	margin-top: 0;
+	text-transform: none
+}
+#quickfinder-dirs label {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 12px;
+	font-weight: normal;
+	margin-bottom: 0
+}
+.datepicker th, .datepicker td {
+	color: #333
+}
+.quickfinder-dirs-quicklink {
+	background-color: #ded595;
+	bottom: 0;
+	box-shadow: 1px -1px 5px 5px rgba(0,0,0,0.2);
+	display: inline-block;
+	font-size: 13px;
+	left: 0;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	right: 0;
+	width: 200px
+}
+.quickfinder-dirs-quicklink > a {
+	color: #6e0e1b
+}
+.search-support {
+	color: #dad293
+}
+
+@media (min-width:768px) and (max-width:981px) {
+#quickfinder-dirs {
+	max-width: 738px
+}
+}
+
+@media (max-width:767px) {
+#quickfinder-dirs {
+	background-color: #620c19;
+	position: static;
+	width: auto
+}
+#quickfinder-dirs form:before, #quickfinder-dirs form:after {
+	left: 0;
+	right: 0
+}
+#quickfinder-dirs .btn-ci {
+	margin-bottom: 15px
+}
+.quickfinder-dirs-quicklink {
+	display: none
+}
+}
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+    <head>
+    <title>Willkommen im FILDERHOTEL</title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+	
+	<link href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/styles.css" />
+	
+	<meta charset='UTF-8'> 
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="apple-touch-icon-precomposed" href="bilder/icon-ipad.png" sizes="72x72" />
+	<link rel="apple-touch-icon-precomposed" href="bilder/icon-iphone-retina.png" sizes="114x114" />
+	<link rel="apple-touch-icon-precomposed" href="bilder/icon-ipad-retina.png" sizes="144x144" />
+	<link rel="apple-touch-icon-precomposed" href="bilder/icon-iphone.png" />
+
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>      
+        <script type="text/javascript">
+			google.load("maps", "3", {'other_params':'sensor=true'});
+		</script>
+	<script src="js/jquery.ui.map.full.min.js" type="text/javascript"></script>
+
+</head>
+<body> 
+
+<!-- Startseite Seite -->
+<div data-role="page" id="startseite">
+	<div data-role="content">
+<img src="http://www.filderhotel.de/img/logo/logo.png" class="schatten" />
+<button>Liste</button>    
+<section id="karte"></section>
+<section id="uebersicht">
+<h1>Restaurants in der Nähe</h1> </div>
+<ul>
+        
+</ul>
+</section>	
+<!-- Content -->
+
+<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script>
+    $(function(){
+      
+      $('#karte').addClass('aktiv');
+      
+      $('button').on('click',function(){
+        $('section').toggleClass('aktiv');
+        if($(this).text() == "Liste") {
+          $(this).text("Karte");
+        } else {
+          $(this).text("Liste");
+        }
+      });
+      
+      navigator.geolocation.getCurrentPosition(function(position){
+        meineLongitude = position.coords.longitude;
+        meineLatitude = position.coords.latitude;
+        
+        var optionen = {
+          zoom: 13,
+          center: new google.maps.LatLng(meineLatitude,meineLongitude),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        
+        karte = new google.maps.Map($('#karte')[0],optionen);
+        
+        var entfernungberechnen = function(meineLongitude, meineLatitude, long1, lat1) {
+          erdRadius = 6371;
+
+        	meineLongitude = meineLongitude * (Math.PI/180);
+        	meineLatitude = meineLatitude * (Math.PI/180);
+        	long1 = long1 * (Math.PI/180);
+        	lat1 = lat1 * (Math.PI/180);
+
+        	x0 = meineLongitude * erdRadius * Math.cos(meineLatitude);
+        	y0 = meineLatitude  * erdRadius;
+
+        	x1 = long1 * erdRadius * Math.cos(lat1);
+        	y1 = lat1  * erdRadius;
+
+        	dx = x0 - x1;
+        	dy = y0 - y1;
+
+        	d = Math.sqrt((dx*dx) + (dy*dy));
+
+        	if(d < 1) {
+        		return Math.round(d*1000)+" m";
+        	} else {
+        		return Math.round(d*10)/10+" km";
+        	}
+        };
+        
+        $.getJSON('restaurants.json',function(json){
+          $.each(json,function(restaurant,daten){
+            
+            $('#uebersicht').find('ul').append('<li>'+restaurant+' <span>'+entfernungberechnen(meineLongitude,meineLatitude,daten.Position.Longitude,daten.Position.Latitude)+'</span></li>');
+            
+            marker = new google.maps.Marker({
+              map: karte,
+              position: new google.maps.LatLng(
+                daten.Position.Latitude,
+                daten.Position.Longitude
+              ),
+              animation: google.maps.Animation.DROP
+            });
+            
+          });
+        });
+        
+      });
+      
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Content -->
+    
+    
+    
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <div data-role="footer" data-id="footernav" data-tap-toggle="false" data-position="fixed" data-theme="b">
+		<div data-role="navbar" data-theme="b">
+			<ul>
+				<li><a href="menue.html" data-icon="star" data-theme="m" data-transition="fade">MENÜ</a></li>
+				<li><a href="anfahrt.html" data-icon="star" data-theme="a" data-transition="fade">ANFAHRT</a></li>
+				<li><a href="restaurant.html" data-icon="star" data-theme="r" data-transition="fade">RESTAURANT</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+	
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

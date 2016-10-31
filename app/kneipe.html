@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Maps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-startup-image" href="splashscreen.png">
+    <link rel="apple-touch-icon-precomposed" href="icon.png">
+    <style>
+    body {
+      margin: 0;
+      font-family: Helvetica;
+    }
+    section {
+      position: absolute;
+      top: 0; 
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #c5ccd4;
+    }
+    section.aktiv {
+      z-index: 1000;
+    }
+    button {
+      z-index: 1001;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      -webkit-appearance: none;
+      font: bold 20px Helvetica;
+      background-color: #04c;
+      color: #fff;
+      border-radius: 9px;
+      border: none;
+      padding: 8px 16px;
+    }
+    #uebersicht {
+      padding: 10px;
+    }
+    #uebersicht h2 {
+      font-size: 20px;
+    }
+    #uebersicht ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      border-radius: 9px;
+      border: 1px solid #aaa;
+    }
+    #uebersicht ul li {
+      padding: 8px 16px;
+      border-top: 1px solid #aaa;
+    }
+    #uebersicht ul li:first-child {
+      border-top: none;
+    }
+    #uebersicht ul li span {
+      font-weight: bold;
+      float: right;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Restaurant Seite -->
+<div data-role="page" id="restaurant">
+<div data-role="header" data-theme="c" data-position="fixed" data-tap-toggle="false">
+<a href="index.php" data-role="button" data-icon="home" data-iconpos="notext">Dieser Text wird nicht angezeigt.</a>	
+    <button>Liste</button>
+    
+    <section id="karte"></section>
+    <section id="uebersicht">
+      <h2>Restaurants in der N&auml;he</h2>
+      <ul>
+        
+      </ul>
+    </section>
+    
+   <div data-role="footer" data-id="footernav" data-tap-toggle="false" data-position="fixed" data-theme="c">
+<div data-role="navbar" data-theme="c">
+<ul>
+<li><a href="menue.php" data-icon="action" class="a" data-transition="fade">MENÜ</a></li>
+<li><a href="anfahrt.php" data-icon="location" class="b" data-transition="fade">ANFAHRT</a></li>
+<li><a href="restaurant.php" data-icon="info" class="c" data-transition="fade" class="ui-btn-active">RESTAURANT</a></li>
+</ul>
+</div><!-- /navbar -->
+</div><!-- /footer --> 
+    <script src="js/zepto.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script>
+    $(function(){
+      
+      $('#karte').addClass('aktiv');
+      
+      $('button').on('click',function(){
+        $('section').toggleClass('aktiv');
+        if($(this).text() == "Liste") {
+          $(this).text("Karte");
+        } else {
+          $(this).text("Liste");
+        }
+      });
+      
+      navigator.geolocation.getCurrentPosition(function(position){
+        meineLongitude = position.coords.longitude;
+        meineLatitude = position.coords.latitude;
+        
+        var optionen = {
+          zoom: 13,
+          center: new google.maps.LatLng(meineLatitude,meineLongitude),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        
+        karte = new google.maps.Map($('#karte')[0],optionen);
+        
+        var entfernungberechnen = function(meineLongitude, meineLatitude, long1, lat1) {
+          erdRadius = 6371;
+
+        	meineLongitude = meineLongitude * (Math.PI/180);
+        	meineLatitude = meineLatitude * (Math.PI/180);
+        	long1 = long1 * (Math.PI/180);
+        	lat1 = lat1 * (Math.PI/180);
+
+        	x0 = meineLongitude * erdRadius * Math.cos(meineLatitude);
+        	y0 = meineLatitude  * erdRadius;
+
+        	x1 = long1 * erdRadius * Math.cos(lat1);
+        	y1 = lat1  * erdRadius;
+
+        	dx = x0 - x1;
+        	dy = y0 - y1;
+
+        	d = Math.sqrt((dx*dx) + (dy*dy));
+
+        	if(d < 1) {
+        		return Math.round(d*1000)+" m";
+        	} else {
+        		return Math.round(d*10)/10+" km";
+        	}
+        };
+        
+        $.getJSON('restaurants.json',function(json){
+          $.each(json,function(restaurant,daten){
+            
+            $('#uebersicht').find('ul').append('<li>'+restaurant+' <span>'+entfernungberechnen(meineLongitude,meineLatitude,daten.Position.Longitude,daten.Position.Latitude)+'</span></li>');
+            
+            marker = new google.maps.Marker({
+              map: karte,
+              position: new google.maps.LatLng(
+                daten.Position.Latitude,
+                daten.Position.Longitude
+              ),
+              animation: google.maps.Animation.DROP
+            });
+            
+          });
+        });
+        
+      });
+      
+    });
+    </script>
+  </body>
+</html>

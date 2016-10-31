@@ -1,0 +1,5 @@
+# URL:https://www.filderhotel.de
+User-agent: *
+Allow: /
+
+Sitemap: https://www.filderhotel.de/sitemap.xml

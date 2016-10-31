@@ -1,0 +1,39 @@
+
+
+/* background */
+body,
+.navigation ul li .navigationBorder { background-color: transparent; }
+
+/* main width */
+.d21_width { width: 100% };
+
+/* default */
+.inputDefault { color: #FFF; border: 1px solid #666; background-color: #666; }
+
+/* selected */
+.inputSelected { font-weight: bold; border: 1px solid #D3AF6D; background-color: #D3AF6D; color: #FFF; }
+.selectionItem .rateOpener a { color: #FFF; }
+.ratetable .rateRowSelected h2 { background-color: #D3AF6D; color: #FFF; }
+.ratetable .rateRowSelected .ratePrice { color: #FFF; }
+.navigation ul li.active,
+.navigation ul li.current { border-top-color: #D3AF6D; }
+.activeDate .ui-state-default,  
+.activeDate .ui-state-hover { background: #D3AF6D !important; border: 1px solid #D3AF6D; color: #FFF }
+
+/* light selected */
+.form .inputSelected { background-color: rgba(211,175,109,.2); } 
+.ratetable-h .rateRowSelected, .ratetable-v .rateRowSelected, .rate-table-item .overlay, .rate-table-item-details.expanded { background-color: #D3AF6D; } 
+
+.ratetable .rateRowSelected .ratePrice { color: #000000; }
+
+.addOns .addOnSelected .addOn { background-color: rgba(211,175,109,.2); }
+div.selectedWish, 
+.selectItemSelected { background-color: rgba(211,175,109,.2); }
+
+/* higlighted */
+.inputHighlighted { font-weight: bold; color: #fff; border: 1px solid #FF6500; background-color: #FF6500; color: #FFF }
+.btn-group, .btn-group .dropdown-toggle, .btn-group .dropdown-menu li a:hover, .btn-group .dropdown-menu li a:focus { background: #FF6500; }
+.btn-group .btn, .btn-group .dropdown-menu li a:hover, .btn-group .dropdown-menu li a:focus { color: #FFF }
+.btn-group .btn .caret { border-bottom-color: #FFF; }
+.btn-group .dropdown-toggle { border-left: 1px dotted #FFF; }
+.rate-table li.rate-table-item-details.expanded { background: #FF6500; }

@@ -1,0 +1,39 @@
+{
+ 	"gerichte": [
+ 	{
+ 		"name": "JOGGEN",
+		"bild": "joggen.png",
+		"untertitel": "Joggen in Ostfildern"	
+	},
+
+	{
+ 		"name": "RADFAHREN",
+		"bild": "mountainbike.png",
+		"untertitel": "Für Radler wichtige Informationen in der Karte sind."	
+	},
+	
+	{
+ 		"name": "A - Z",
+		"bild": "gericht3.png",
+		"untertitel": "http://json-schema.org/draft-04/schema#"	
+	},
+	
+	{
+ 		"name": "WETTER",
+		"bild": "wetter.png",
+		"untertitel": "Ostfildern"	
+	},
+	
+	{
+ 		"name": "AKTUELLES",
+		"bild": "xxweihnacht.png",
+		"untertitel": "Weihnachtsmärkte in Esslingen und Stuttgart vom 22.11. bis 23.12.2015."	
+	}
+	
+	]
+
+}
+	
+
+
+	

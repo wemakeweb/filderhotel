@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.filderhotel.de/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/wohnen/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/anfahrt/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/service/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/speisen/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/gastbewertung/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/guthotels/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/kontakt/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/galerie/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/business/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/impressum/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/en/english/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/en/hotel/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/en/service/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/en/contact/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/pdf/AGB-Filderhotel.pdf</loc>
+  <lastmod>2015-07-12T10:34:38+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>https://www.filderhotel.de/pdf/Anfahrt.pdf</loc>
+  <lastmod>2015-07-12T10:34:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+</urlset>

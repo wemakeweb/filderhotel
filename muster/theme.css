@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400';
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,700';
+@import 'components.css';
+@import 'timeline.css';
+
+/*GENERAL*/
+
+body,
+html {
+    font-family: 'Ubuntu';
+    margin: 0;
+    padding: 0;
+}
+
+body p {
+    font-weight: 300;
+    line-height: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway';
+}
+
+.uk-navbar-nav>li>a {
+    font-family: 'Ubuntu';
+    color: white;
+    text-transform: uppercase;
+    ;
+}
+
+.uk-nav-navbar ul a {
+    color: white;
+}
+
+a,
+a:hover {
+    color: #e64233;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #e64233;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 2.5em;
+}
+
+h5 {
+    font-size: 2em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+ol,
+ul {
+    padding: 0!important;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.1em;
+}
+
+
+/*GENERAL*/
+
+
+/*NAV BAR*/
+
+.uk-navbar {
+    background: rgba(0, 0, 0, 0.9);
+    height: 70px;
+    position: absolute;
+    top: calc(100vh - 70px);
+    left: 0;
+    right: 0;
+}
+
+.uk-sticky-placeholder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 11;
+}
+
+.uk-navbar .uk-navbar-nav > li > a {
+    color: #ffffff!important;
+    height: 70px!important;
+    padding: 18px 15px!important;
+}
+
+.uk-navbar .uk-navbar-nav > li > a:hover,
+.uk-navbar-nav > li.uk-active > a:focus,
+.uk-navbar .uk-navbar-nav > li.uk-active > a {
+    background: rgba(0, 0, 0, 0);
+    color: #e64233!important;
+}
+
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li.uk-open > a {
+    background: rgba(0, 0, 0, 0)!important;
+    /* 3 */
+    outline: none;
+}
+
+.logo {
+    padding: 0px 0;
+    height: 70px;
+}
+
+.uk-icon-button {
+    background: #e64233;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.uk-icon-button:hover {
+    background: #e64233;
+    color: #fff;
+}
+
+
+/*NAV BAR*/
+
+
+/*SECTIONS*/
+
+section {
+    position: relative;
+}
+
+#section-0 h3 {
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    margin: 0 auto;
+    display: table;
+    padding: 15px 0px;
+}
+
+#section-0 p {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+ul.social li {
+    display: inline-block;
+    margin: 2px;
+}
+
+footer {
+    background-color: #000;
+    color: #ffffff;
+}
+
+
+/*SECTIONS*/
+
+.gmaps-bg {
+    background: #3498db url(../images/bg3.jpg) 0% 0% repeat;
+    -webkit-animation: heroflow 90s infinite linear;
+    animation: heroflow 90s infinite linear;
+    position: relative;
+    background-size: cover!important;
+}
+
+.gray-bg {
+    background: #3498db url(../images/bg3.jpg) 0% 0% repeat;
+    /*background: #ffffff url(../images/Polygon-Back.jpg) 50% 0% repeat;
+    padding-top: 286px;
+    padding-bottom: 280px;*/
+    -webkit-animation: heroflow 90s infinite linear;
+    animation: heroflow 90s infinite linear;
+    position: relative;
+    background-size: cover!important;
+}
+
+.white-bg {
+    background: #ffffff url(../images/photography.png) 0% 0% repeat;
+}
+
+.freelancer-bg {
+    background: #ffffff url(../images/freelancer.jpg) 0% 0% repeat;
+}
+
+.uk-position-bottom {
+    bottom: 120px!important;
+}
+
+.go-down {
+    bottom: 120px!important;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+}
+

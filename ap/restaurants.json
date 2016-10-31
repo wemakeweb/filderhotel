@@ -1,0 +1,68 @@
+{
+" FILDERHOTEL": {
+  "Kategorie": "Bistro",
+  "Position": {
+    "Latitude": 48.716122,
+    "Longitude": 9.293192
+  }
+},
+"Kubino - Schwäbisch": {
+  "Kategorie": "Schwäbische Küche",
+  "Position": {
+    "Latitude": 48.716723,
+    "Longitude": 9.293530
+  }
+},
+"Al Camino - Italienisch": {
+  "Kategorie": "Italienische Küche",
+  "Position": {
+    "Latitude": 48.711518,
+    "Longitude": 9.298609
+  }
+},
+"Angelikas - Schwäbisch": {
+  "Kategorie": "Italienische Küche",
+  "Position": {
+    "Latitude": 48.712740,
+    "Longitude": 9.301443
+  }
+},
+"Villa Lucia - Italienisch": {
+  "Kategorie": "Italienische Küche",
+  "Position": {
+    "Latitude": 48.715992,
+    "Longitude": 9.290355
+  }
+},
+
+"MC Donalds": {
+  "Kategorie": "Bürger Restaurant",
+  "Position": {
+    "Latitude": 48.7131101,
+    "Longitude": 9.308855
+  }
+},
+"Sonne - Schwäbisch": {
+  "Kategorie": "Schwäbische Küche",
+  "Position": {
+    "Latitude": 48.710959,
+    "Longitude": 9.29534
+  }
+},
+
+"Pizza Pazza - Pizeria": {
+  "Kategorie": "Pizeria ToGo",
+  "Position": {
+    "Latitude": 48.713506,
+    "Longitude": 9.294240
+  }
+},
+
+"Louis' Bauernstüble": {
+  "Kategorie": "Schwäbische Küche",
+  "Position": {
+    "Latitude": 48.713595,
+    "Longitude": 9.296257
+  }
+}
+}
