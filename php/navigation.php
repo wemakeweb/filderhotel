@@ -16,7 +16,7 @@
       <div class="uk-dropdown uk-dropdown-navbar">
         <ul class="uk-nav uk-nav-navbar">
           <li><a href="https://www.filderhotel.de/speisen/#arrangement">Arrangement</a></li>
-          <li><a href="https://www.filderhotel.de/gastbewertung">Gästebewertung</a></li>
+          <?php // <li><a href="https://www.filderhotel.de/gastbewertung">Gästebewertung</a></li> ?>
           <li><a href="https://www.filderhotel.de/guthotels">Gut-Hotels</a></li>
         </ul>
       </div>
@@ -35,7 +35,7 @@
         </ul>
       </div>
     </li>
-<li class="uk-parent" data-uk-dropdown=""> 
+<li class="uk-parent" data-uk-dropdown="">
 <a href="https://www.filderhotel.de/en/english">English</a>
 <div class="uk-dropdown uk-dropdown-navbar">
 <ul class="uk-nav uk-nav-navbar">
@@ -56,6 +56,3 @@
 <div class="uk-float-right"><a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a></div>
 <!--offcanvas-->
 </nav>
-
-
-

@@ -55,10 +55,10 @@
 </head>
 
 <body>
- <?php include("../php/navigation.php"); ?>   
+ <?php include("../php/navigation.php"); ?>
   <div class="uk-grid" data-uk-grid-margin>
 <div class="uk-small-1-1 uk-width-medium-1-1">
-<br/> 
+<br/>
 <div class="uk-slidenav-position" data-uk-slider>
 <div class="uk-slider-container">
 <ul class="uk-slider uk-grid-width-medium-1-3 uk-grid-width-large-1-4">
@@ -76,11 +76,11 @@
 </div>
 <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slider-item="previous"></a>
 <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slider-item="next"></a>
-</div>        
+</div>
 <div class="uk-container uk-container-center uk-text-center">
 <div data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat:true, delay:900}"> <a href="#willkommen" data-uk-smooth-scroll><i class="uk-text-left uk-icon-angle-down uk-icon-large kontakt-icon-intro"></i><br>
 </a></div>
-</div> <!--uk-container-->     
+</div> <!--uk-container-->
 </div><!--uk-small-->
 </div>  <!--uk-grid-->
 <div class="uk-container">
@@ -90,8 +90,8 @@
 <div data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true, delay:100}">Arrangement</div>
  </h3>
  </div><!--uk-text-center-->
- </div><!--uk-width-1-1-->   
-<div class="uk-container uk-container-center uk-text-center">  
+ </div><!--uk-width-1-1-->
+<div class="uk-container uk-container-center uk-text-center">
 <!--section-willkommen-->
 <section id="willkommen">
 <div class="uk-width-1-1">
@@ -100,30 +100,30 @@
 <div class="uk-panel info-box">
 <div class="uk-text-center" style="margin:12px 7px 7px 7px;">
 <?php include("../php/book.php"); ?>
-</div> <!--uk-text-left--> 
+</div> <!--uk-text-left-->
 </div><!--uk-panel-->
-</div><!--uk-width-medium-3-10-->        
+</div><!--uk-width-medium-3-10-->
 <div class="uk-width-medium-7-10 uk-width-small-1-1 uk-container-center">
 <div class="uk-panel info-box" style="margin:12px 7px 7px 7px;">
 <div class="uk-panel info-box" style="text-align:center">
 <div class="uk-text-left" style="margin:12px 7px 7px 7px;">
 <section id="food">
 <div class="jo-food-tabs">
-<!-- tabs nav -->    
-<div class="jo-food-tabs-nav" style="background:#D8D8D8;">   
+<!-- tabs nav -->
+<div class="jo-food-tabs-nav" style="background:#D8D8D8;">
     <div class="uk-container uk-container-center">
-<ul class="food-fiho uk-clearfix" style="background:#D8D8D8;" data-uk-switcher="{connect:'#jo-home-tabs', animation:'slide-horizontal'}">         
+<ul class="food-fiho uk-clearfix" style="background:#D8D8D8;" data-uk-switcher="{connect:'#jo-home-tabs', animation:'slide-horizontal'}">
 <li class="gray h4"><a href="">StuttgART</a></li>
 <li class="gray h4"><a href="">mit FREUNDen</a></li>
 <li class="gray h4"><a href="">Esslingen</a></li>
 <li class="gray h4"><a href="">FRÜHstück</a></li>
 <li class="gray h4"><a href="">FAMILIENpackages</a></li>
         </ul>
-    </div>  
+    </div>
 </div>
-<!-- tabs content -->     
+<!-- tabs content -->
 <div class="jo-food-tabs-content uk-container uk-container-center">
-<ul id="jo-home-tabs" class="uk-switcher">              
+<ul id="jo-home-tabs" class="uk-switcher">
 <li><div class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center">
 <div class="uk-panel uk-width-medium-2-5" style="padding:0px 7px 0px 28px;">
 <h1 class="jo-title jo-title-small">StuttGART</h1>
@@ -151,7 +151,7 @@
 <p>Sie haben Besuch, Ihre Gäste übernachten im FILDERHOTEL.<br/>
                   Am Morgen danach frühstücken Sie gemeinsam mit ihnen.</p><br/>
                 <p>Leistungen:</p>
-<ul class="uk-list"> 
+<ul class="uk-list">
 <li><p>1 x Übernachung für 2 Personen im Komfort Doppelzimmer</p></li>
 <li><p>4 x Frühstück vom reichhaltigen Frühstücksbüfett</p></li>
 <li><p>4 x Glas Sekt zum Frühstück</p></li>
@@ -176,32 +176,32 @@
 <li><p>ab 17.30 Uhr</p></li><br/>
  <li><p>Schwäbische und saisonale Gerichte</p></li>
 <li><p>Hindenburgstraße 29</p></li>
-<li><p>Tel. 0711 4567000</p></li>   
+<li><p>Tel. 0711 4567000</p></li>
 </ul>
-<p><a href="http://www.gourmetbutterlin.de/" target="_blank" class="uk-button">..mehr Informationen &raquo;</a>     
+<p><a href="http://www.gourmetbutterlin.de/" target="_blank" class="uk-button">..mehr Informationen &raquo;</a>
 </div>
 <div class="uk-panel uk-width-medium-3-5" style="padding:55px 35px 0px 22px;">
 <img src="../img/slide/bauernstueble_innen_350.jpg" alt="louis' bauernstüble filderhotel ostfildern"/></div>
 </div></li>
-<!--vier-->                                    
+<!--vier-->
 <li><div class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center">
 <div class="uk-panel uk-width-medium-2-5" style="padding:0px 7px 0px 28px;">
 <h1 class="jo-title jo-title-small">Villa Lucia</h1>
-<p>Öffnungszeiten:</p>	
+<p>Öffnungszeiten:</p>
 <ul class="uk-list">
 <li><p>Dienstag - Sonntag:</p></li>
 <li><p>11.30 bis 14.30 Uhr</p></li>
  <li><p>17.30 bis 23.00 Uhr</p></li>
 <li><p>Montag Ruhetag</p></li><br/>
 <li><p>An der Akademie 4</p></li>
-<li><p>73760 Ostfildern</p></li>   
+<li><p>73760 Ostfildern</p></li>
 <li><p>Tel.: 0711 - 900 39 791</p></li>
 </ul>
 </div>
 <div class="uk-panel uk-width-medium-2-5" style="padding: 0px 0px 39px 0px;">
   <img src="../img/logo/villa_lucia.png" alt="villa lucia logo filderhotel ostfildern"/></div>
 </div></li>
-<!--ende-->              
+<!--ende-->
     </ul><!--home-tabs-->
 </div><!--ivm-tabs-content uk-container-->
 </div><!--ivm-kreativan-tabs-->
@@ -213,12 +213,12 @@
 </div><!--panel-->
 </div><!--ukmedium-->
 </div><!--ukgrid-->
-</div><!--uk-text-left--> 
+</div><!--uk-text-left-->
             </div><!--uk-panel-box-->
           </div><!--uk-width-medium-7-10-->
         </div><!--uk-grid-->
       </div><!--uk-width-1-1-->
-    </section><!--section-willkommen--> 
+    </section><!--section-willkommen-->
 
 
 
@@ -232,21 +232,21 @@
 <div class="uk-text-left" style="margin:12px 7px 7px 7px;">
 <section id="food">
 <div class="jo-food-tabs">
-<!-- tabs nav -->    
-<div class="jo-food-tabs-nav" style="background:#D8D8D8;">   
+<!-- tabs nav -->
+<div class="jo-food-tabs-nav" style="background:#D8D8D8;">
     <div class="uk-container uk-container-center">
-<ul class="food-fiho uk-clearfix" style="background:#D8D8D8;" data-uk-switcher="{connect:'#jo-home-tabs', animation:'slide-horizontal'}">         
+<ul class="food-fiho uk-clearfix" style="background:#D8D8D8;" data-uk-switcher="{connect:'#jo-home-tabs', animation:'slide-horizontal'}">
 <li class="gray h4"><a href="">StuttgART</a></li>
 <li class="gray h4"><a href="">mit FREUNDen</a></li>
 <li class="gray h4"><a href="">Esslingen</a></li>
 <li class="gray h4"><a href="">FRÜHstück</a></li>
 <li class="gray h4"><a href="">FAMILIENpackages</a></li>
         </ul>
-    </div>  
+    </div>
 </div>
-<!-- tabs content -->     
+<!-- tabs content -->
 <div class="jo-food-tabs-content uk-container uk-container-center">
-<ul id="jo-home-tabs" class="uk-switcher">              
+<ul id="jo-home-tabs" class="uk-switcher">
 <li><div class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center">
 <div class="uk-panel uk-width-medium-2-5" style="padding:0px 7px 0px 28px;">
 <h1 class="jo-title jo-title-small">StuttGART</h1>
@@ -278,7 +278,7 @@
 <p>Sie haben Besuch, Ihre Gäste übernachten im FILDERHOTEL.<br/>
                   Am Morgen danach frühstücken Sie gemeinsam mit ihnen.</p><br/>
                 <p>Leistungen:</p>
-<ul class="uk-list"> 
+<ul class="uk-list">
 <li><p>1 x Übernachung für 2 Personen im Komfort Doppelzimmer</p></li>
 <li><p>4 x Frühstück vom reichhaltigen Frühstücksbüfett</p></li>
 <li><p>4 x Glas Sekt zum Frühstück</p></li>
@@ -303,32 +303,32 @@
 <li><p>ab 17.30 Uhr</p></li><br/>
  <li><p>Schwäbische und saisonale Gerichte</p></li>
 <li><p>Hindenburgstraße 29</p></li>
-<li><p>Tel. 0711 4567000</p></li>   
+<li><p>Tel. 0711 4567000</p></li>
 </ul>
-<p><a href="http://www.gourmetbutterlin.de/" target="_blank" class="uk-button">..mehr Informationen &raquo;</a>     
+<p><a href="http://www.gourmetbutterlin.de/" target="_blank" class="uk-button">..mehr Informationen &raquo;</a>
 </div>
 <div class="uk-panel uk-width-medium-3-5" style="padding:55px 35px 0px 22px;">
 <img src="../img/slide/bauernstueble_innen_350.jpg" alt="louis' bauernstüble filderhotel ostfildern"/></div>
 </div></li>
-<!--vier-->                                    
+<!--vier-->
 <li><div class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center">
 <div class="uk-panel uk-width-medium-2-5" style="padding:0px 7px 0px 28px;">
 <h1 class="jo-title jo-title-small">Villa Lucia</h1>
-<p>Öffnungszeiten:</p>	
+<p>Öffnungszeiten:</p>
 <ul class="uk-list">
 <li><p>Dienstag - Sonntag:</p></li>
 <li><p>11.30 bis 14.30 Uhr</p></li>
  <li><p>17.30 bis 23.00 Uhr</p></li>
 <li><p>Montag Ruhetag</p></li><br/>
 <li><p>An der Akademie 4</p></li>
-<li><p>73760 Ostfildern</p></li>   
+<li><p>73760 Ostfildern</p></li>
 <li><p>Tel.: 0711 - 900 39 791</p></li>
 </ul>
 </div>
 <div class="uk-panel uk-width-medium-2-5" style="padding: 0px 0px 39px 0px;">
   <img src="../img/logo/villa_lucia.png" alt="villa lucia logo filderhotel ostfildern"/></div>
 </div></li>
-<!--ende-->              
+<!--ende-->
     </ul><!--home-tabs-->
 </div><!--ivm-tabs-content uk-container-->
 </div><!--ivm-kreativan-tabs-->
@@ -380,12 +380,12 @@
                <p><span class="glyphicon glyphicon-arrow-right"></span>Preis 117,00 €</p>
                 </ul>
                 </div>
-                <!-- icon --> 
+                <!-- icon -->
                 <br>
               <p>Für Smartphone Besitzer, empfehlen wir die kostenlose App: TravelBook Stuttgart</p>
                 <p><a href="https://www.dirs21.de/DIRS21_BOOK/filderhotelde/default.aspx?mode=package" target="_blank" class="btn btn-default">..mehr Informationen &raquo;</a></p>
               </div>
-              <!-- span --> 
+              <!-- span -->
           </div>
             <!-- tap-pane -->
             <div class="tab-pane" id="FREUNDen">
@@ -402,7 +402,7 @@
                    <p><span class="glyphicon glyphicon-arrow-right"></span>Anreise freitags, samstags und sonntags möglich</p>
                    <p><span class="glyphicon glyphicon-arrow-right"></span>Preis 122,00 €</p>
                 </ul>
-                <!-- icon --> 
+                <!-- icon -->
           </div>
                 <br>
                 <p><a href="https://www.dirs21.de/DIRS21_BOOK/filderhotelde/default.aspx?mode=package" target="_blank" class="btn btn-default">..mehr Informationen &raquo;</a></p>
@@ -425,16 +425,16 @@
                   <p><span class="glyphicon glyphicon-arrow-right"></span> Anreise freitags und samstags möglich</p>
                    <p><span class="glyphicon glyphicon-arrow-right"></span>Preis 121,00 €</p>
                 </ul>
-                <!-- icon --> 
+                <!-- icon -->
                 </div>
                 <br>
                 <p>Für Smartphone Besitzer, empfehlen wir die kostenlose App: Esslingen App von Tourias</p>
                 <p><a href="https://www.dirs21.de/DIRS21_BOOK/filderhotelde/default.aspx?mode=package" target="_blank" class="btn btn-default">..mehr Informationen &raquo;</a></p>
               </div>
-              <!-- span --> 
+              <!-- span -->
            </div>
             <!-- tap-pane -->
-            
+
            <div class="tab-pane" id="FRUEHstueck">
               <div class="col-md-8">
               <br>
@@ -444,16 +444,16 @@
   <p><span class="glyphicon glyphicon-arrow-right"></span>Montag bis Freitag   7:00 bis 10:00 Uhr, Preis   11,00 €</p>
   <p><span class="glyphicon glyphicon-arrow-right"></span>Samstag und Sonntag  8:00 bis 10:00 Uhr, Preis   11,00 €</p>
                 </ul>
-                <!-- icon --> 
+                <!-- icon -->
              </div>
                 <br>
                 <p>Gäste, die nicht im Hotel übernachten, bitten wir um Reservierung.</p>
                 <p><a href="http://www.filderhotel.de/#reservierung/" target="_blank" class="btn btn-default">..mehr Informationen &raquo;</a></p>
               </div>
-              <!-- span --> 
+              <!-- span -->
         </div>
             <!-- tap-pane -->
-            
+
           <div class="tab-pane" id="FAMILIENpackages">
               <div class="col-md-8">
               <br>
@@ -463,26 +463,26 @@
                 <div class="aBox service">
                 <ul>
                   <p><span class="glyphicon glyphicon-arrow-right"></span>Leistungen:</p>
-                   <p><span class="glyphicon glyphicon-arrow-right"></span>1 x Übernachtung in 2 Economy Twinbettzimmer</p>
+                   <p><span class="glyphicon glyphicon-arrow-right"></span>1 x Übernachtung in 2 Economy Queensize Bett</p>
                    <p><span class="glyphicon glyphicon-arrow-right"></span>Preis 139,00 €</p>
                 </ul>
-                <!-- icon --> 
+                <!-- icon -->
           </div>
                 <br>
                 <p><a href="http://www.filderhotel.de/kontakt" target="_blank" class="btn btn-default">..mehr Informationen &raquo;</a></p>
               </div>
-              <!-- span --> 
+              <!-- span -->
         </div>
-            <!-- tap-pane --> 
-            
+            <!-- tap-pane -->
+
          </div>
-          <!-- /.tabbable --> 
+          <!-- /.tabbable -->
        </div>
-        <!-- /.row --> 
+        <!-- /.row -->
       </div>
-      <!-- container --> 
+      <!-- container -->
     </div>
-    <!-- arrangement --> 
+    <!-- arrangement -->
   </div>
 
 
@@ -491,33 +491,33 @@
 
 <!--ansprechpartner-->
 <?php include("../php/partner.php"); ?>
-<!--ansprechpartner--> 
+<!--ansprechpartner-->
 </div>
 </div>
 <hr class="uk-grid-divider">
 </div>
 <!--kontakt-->
 <?php include("../php/kontakt.php"); ?>
-<!--kontakt--> 
+<!--kontakt-->
 <!--backtotop-->
 <div class="uk-container uk-container-center uk-text-center">
   <div data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat:true, delay:900}"> <a href="#jo-main" data-uk-smooth-scroll><i class="uk-icon-angle-up uk-icon-large kontakt-icon-intro"></i><br>
     Back to top</a></div>
 </div>
-<!--uk-scrollspy--> 
+<!--uk-scrollspy-->
 <!--uk-container-->
 </div>
 </div>
-<!--backtotop--> 
+<!--backtotop-->
 <!--impresscanvas-->
 <?php include("../php/impress.php"); ?>
-<!--impresscanvas--> 
+<!--impresscanvas-->
 <!--footnote-->
 <?php include("../php/footnote.php"); ?>
 <!--footnote-->
 </footer>
 </section>
-<!--section-kontakt--> 
+<!--section-kontakt-->
 <!--navoffcanvas-->
 <?php include("../php/offcanvas.php"); ?>
 <!--navoffcanvas-->
@@ -525,13 +525,13 @@
 </div>
 </div>
 </div>
-<!--uk-container--> 
-<!--my-js--> 
-<script src="../js/jo.js"></script> 
-<!--typekit--> 
-<script type="text/javascript" src="//use.typekit.net/ryk1idr.js" defer></script> 
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
-<!--google-analytics--> 
+<!--uk-container-->
+<!--my-js-->
+<script src="../js/jo.js"></script>
+<!--typekit-->
+<script type="text/javascript" src="//use.typekit.net/ryk1idr.js" defer></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!--google-analytics-->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
