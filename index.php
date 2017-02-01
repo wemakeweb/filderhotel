@@ -41,6 +41,8 @@
     <script src="https://wis.upperbooking.com/filderhotel/Booking?locale=de" async></script>
     <!-- Ende Konfiguration Schnellbuchungsbox -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
   </head>
   <body>
     <div class="uk-container uk-container-center uk-text-center">

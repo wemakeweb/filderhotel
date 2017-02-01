@@ -1,4 +1,21 @@
-
+$(function () {
+   window.cookieconsent.initialise({
+     palette: {
+       popup: {
+         background: '#ffffff'
+       },
+       button: {
+         background: '#990000'
+       }
+     },
+     content: {
+       message: 'Wir benutzen Cookies, um Ihnen das beste Webseiten-Erlebnis zu ermöglichen.',
+       link: 'Mehr',
+       href: 'https://www.filderhotel.de/impressum#datenschutz',
+       dismiss: 'Verstanden'
+     }
+   });
+ });
 
 /*scrollen sebastian otto */
 $(function(){
@@ -36,7 +53,7 @@ $nav.removeClass(klasse);
     wf.async = 'true';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
-  })(); 
+  })();
 
 
 
@@ -92,22 +109,21 @@ function pviiClassNew(obj, new_style) { //v2.6 by PVII
                     }, 50);
                 });
             });
-			
-			
-			
-			
-			
+
+
+
+
+
 var highest_element = 0;
-	 
+
 	// Prüfe, welches Element am höchsten ist
 	$('.teaser').each(function() {
 	  if ($(this).height() > highest_element) {
 	    highest_element = $(this).height();
 	  }
 	});
-	 
+
 	// Weise diese Höhe allen Elementen zu.
 	$('.teaser').each(function() {
 	  $(this).height(highest_element);
-	});			
-			
+	});
